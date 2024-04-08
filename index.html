@@ -10,8 +10,8 @@
     href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
     rel="stylesheet">
   <title>1000 Game</title>
-  <script type="module" crossorigin src="./assets/index-C2Wm_Z9e.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-B95rAr46.css">
+  <script type="module" crossorigin src="/assets/index-BUQkf5W4.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-4rmR-L4S.css">
 </head>
 
 <body>
@@ -20,21 +20,22 @@
 
       <div class="players_quantity">
         <p>Number of players :</p>
-        <div class="checkbox__wraper"><label for="checkbox">
-          <input type="radio" class="checkbox" name="3 Players" />
+        <div class="checkbox__wraper">
+          <label>
+          <input type="radio" class="checkbox checkbox3" name="Players" />
           3 Players
         </label>
         </div>
         <div class="checkbox__wraper">
           <label>
-          <input type="radio" class="checkbox" name="3 Players" checked />
+          <input type="radio" class="checkbox checkbox4" name="Players" checked  />
           4 Players
         </label>
         </div>
       </div>
       <div class="btm__wraper">
         <div class="new_game__btm">NEW GAME</div>
-        <div class="card_value">card value</div>
+        <div class="back">back</div>
       </div>
     </div>
 
@@ -46,8 +47,11 @@
           <label for="name">name:</label>
           <input class="input__name" type="text" placeholder="Enter your name">
         </div>
-        <input class="input_score" type="number" placeholder="add score">
-        <div class="score_wrapper"></div>
+        <input class="input_score p1" type="number" data-type="p1" placeholder="add score" inputmode="numeric">
+        
+        <div class="score_wrapper">
+          <li>0</li>
+        </div>
       </div>
 
       <div class="row">
@@ -56,8 +60,10 @@
           <label for="name">name:</label>
           <input class="input__name" type="text" placeholder="Enter your name">
         </div>
-        <input class="input_score" type="number" placeholder="add score">
-        <div class="score_wrapper"></div>
+        <input class="input_score p2" type="number" placeholder="add score" inputmode="numeric">
+        <div class="score_wrapper">
+          <li>0</li>
+        </div>
       </div>
 
       <div class="row">
@@ -66,18 +72,22 @@
           <label for="name">name:</label>
           <input class="input__name" type="text" placeholder="Enter your name">
         </div>
-        <input class="input_score" type="number" placeholder="add score">
-        <div class="score_wrapper"></div>
+        <input class="input_score p3" type="number" placeholder="add score" inputmode="numeric"> 
+        <div class="score_wrapper">
+          <li>0</li>
+        </div>
       </div>
 
       <div class="row">
 
         <div class="pl_name">
           <label for="name">name:</label>
-          <input class="input__name" type="text" placeholder="Enter your name">
+          <input class="input__name" type="text" placeholder="Enter your name" inputmode="numeric">
         </div>
-        <input class="input_score" type="number" placeholder="add score">
-        <div class="score_wrapper"></div>
+        <input class="input_score p4" type="number" placeholder="add score" inputmode="numeric">
+        <div class="score_wrapper">
+          <li>0</li>
+        </div>
       </div>
 
     </div>
